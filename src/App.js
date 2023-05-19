@@ -1,24 +1,17 @@
+import React from 'react';
 import './App.css';
+import Header from "./Component/head/Header";
+import Hero from './Component/Hero/Hero';
+import Features from './Component/features/Features';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header/>
+    <Hero/>
+    <Features></Features>
+    </>
   );
-}
+};
 
 export default App;
